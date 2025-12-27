@@ -11,15 +11,12 @@ public class StudentManagementSystem {
         for (int i = 0; i < n; i++) {
             System.out.print("Student " + (i + 1) + " Name: ");
             names[i] = sc.nextLine();
-
             System.out.print("Student " + (i + 1) + " Marks: ");
             marks[i] = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine(); 
         }
-        // 2. Find Topper
         int max = marks[0];
         int topperIndex = 0;
-
         for (int i = 1; i < n; i++) {
             if (marks[i] > max) {
                 max = marks[i];
@@ -80,3 +77,4 @@ public class StudentManagementSystem {
     }
 
 }
+
